@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary-strong-cyan: hsl(172, 67%, 45%);
+    --clr-neutral-very-dark-cyan: hsl(183, 100%, 15%);
+    --clr-neutral-Dark-grayish-cyan: hsl(186, 78%, 79%);
+    --clr-neutral-Grayish-cyan: hsl(184, 14%, 56%);
+    --clr-neutral-Light-grayish-cyan: hsl(185, 41%, 84%);
+    --clr-neutralVery-light-grayish-cyan: hsl(189, 41%, 97%);
+    --clr-neutral-White: hsl(0, 0%, 100%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-neutral-Light-grayish-cyan);
+}
+
+.card {
+    width: auto;
+    height: auto;
+    background-color: var(--clr-neutral-White);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+button {
+    font-family: inherit;
+}
+
+.sec-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    position: relative;
+}
+
+p {
+    font-size: 12px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input {
+    width: 16rem;
+    height: 2rem;
+    outline: 2px solid var(--clr-primary-strong-cyan);
+    border: none;
+    border-radius: 0.2rem;
+    font-family: inherit;
+    text-align: right;
+    padding-inline: 1rem;
+}
+
+.dollar {
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+}
+
+.persons-logo {
+    position: absolute;
+    top: 18rem;
+    left: 1rem;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-block: 0.5rem;
+}
+
+.tips-button {
+    background-color: var(--clr-neutral-very-dark-cyan);
+    border: none;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    color: var(--clr-neutral-White);
+}
+
+.self-tip {
+    color: var(--clr-neutral-very-dark-cyan);
+    background-color: var(--clr-neutral-Light-grayish-cyan);
+}
+
+.sec-2 {
+    background-color: var(--clr-neutral-very-dark-cyan);
+    width: 20rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: var(--clr-neutral-White);
+}
+.grid-notan {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+span {
+    color: var(--clr-primary-strong-cyan);
+    font-size: 2rem;
+}
+h4 {
+    font-size: small;
+}
+.p-color {
+    color: rgba(255, 255, 255, 0.458);
+}
+
+.btn-reset {
+    margin-top: 6rem;
+    background-color: var(--clr-primary-strong-cyan);
+    color: var(--clr-neutral-very-dark-cyan);
+    width: 16rem;
+    height: 2.5rem;
+    border-radius: 0.2rem;
+    border: none;
+}
+.btn-reset:hover {
+    background-color: var(--clr-neutral-Dark-grayish-cyan);
+}
+
+.nr-people-text-flex1 {
+    display: flex;
+    gap: 7rem;
+}
+
+.nr-people-text-flex2 {
+    display: flex;
+    gap: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.color-hidden {
+    color: red;
+}
+
+@media (max-width: 673px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .dollar {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+    }
+
+    .persons-logo {
+        position: absolute;
+        top: 16.5rem;
+        left: 1rem;
+    }
+}
